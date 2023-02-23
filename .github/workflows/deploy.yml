@@ -29,8 +29,9 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
           server: ${{secrets.HOST_NAME}}
-          username: ${{secrets.HOST_USER_NAME}}
-          password: ${{secrets.HOST_KEY}}
+          username: ruden
+          password: vs1452.mirohost.net
+          port: 21
           dry-run: true
           # local-dir: ./build/
           server-dir: ./student-app.net.ua/
