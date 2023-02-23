@@ -32,7 +32,7 @@ jobs:
           username: ${{secrets.HOST_USER_NAME}}
           password: ${{secrets.HOST_KEY}}
           dry-run: true
-          local-dir: ./build/
+          # local-dir: ./build/
           server-dir: ./student-app.net.ua/
           exclude: |
             **/.git*
