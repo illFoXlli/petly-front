@@ -28,9 +28,9 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
-          server: ${{secrets.HOST_NAME}}
+          server: vs1452.mirohost.net
           username: ruden
-          password: vs1452.mirohost.net
+          password: R0h1MyklXQ9N
           port: 21
           dry-run: true
           # local-dir: ./build/
