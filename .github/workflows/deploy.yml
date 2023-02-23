@@ -31,7 +31,7 @@ jobs:
           server: vs1452.mirohost.net
           username: ruden
           password: R0h1MyklXQ9N
-          port: 21
+          # port: 21
           # dry-run: true
           local-dir: ./build/
           server-dir: ./student-app.net.ua/
