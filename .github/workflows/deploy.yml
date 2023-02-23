@@ -2,10 +2,12 @@ name: Build and deploy to GitHub Pages
 
 on:
   push:
-    branches: [dev]
+    branches:
+      - main
 
 jobs:
   build-and-deploy:
+    name: 🎉 Deploy
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
@@ -22,3 +24,18 @@ jobs:
         with:
           branch: gh-pages
           folder: build
+
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.3.3
+        with:
+          server: ${{secrets.HOST_NAME}}
+          username: ${{secrets.HOST_USER_NAME}}
+          password: ${{secrets.HOST_KEY}}
+          dry-run: true
+          local-dir: ./build/
+          server-dir: ./student-app.net.ua/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            fileToExclude.txt
