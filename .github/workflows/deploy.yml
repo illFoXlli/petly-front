@@ -33,7 +33,7 @@ jobs:
           password: R0h1MyklXQ9N
           # port: 21
           # dry-run: true
-          local-dir: ./build
+          local-dir: ./build/
           server-dir: ./student-app.net.ua/
           exclude: |
             **/.git*
