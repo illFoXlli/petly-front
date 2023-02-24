@@ -6,6 +6,7 @@ import { Provider } from 'react-redux';
 import { App } from 'components/App';
 import './index.css';
 import './assets/fonts/fonts.css';
+
 import { theme } from 'utility/theme';
 import GlobalStyle from 'utility/globalStyles';
 
