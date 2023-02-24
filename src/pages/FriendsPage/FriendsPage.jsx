@@ -1,4 +1,5 @@
 import Friends from 'components/Friends/Friends';
+
 import {
   ItemCard,
   ListCard,
