@@ -8,6 +8,7 @@ import './index.css';
 import './assets/fonts/fonts.css';
 import { theme } from 'utility/theme';
 import GlobalStyle from 'utility/globalStyles';
+
 import { persistor, store } from 'redux/store';
 import { PersistGate } from 'redux-persist/integration/react';
 
