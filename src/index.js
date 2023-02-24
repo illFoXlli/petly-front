@@ -9,6 +9,7 @@ import './assets/fonts/fonts.css';
 import { theme } from 'utility/theme';
 import GlobalStyle from 'utility/globalStyles';
 import { persistor, store } from 'redux/store';
+
 import { PersistGate } from 'redux-persist/integration/react';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -17,7 +18,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <PersistGate loading={null} persistor={persistor}>
         <ThemeProvider theme={theme}>
           <GlobalStyle />
-          <BrowserRouter basename="/petly-front">
+          <BrowserRouter basename="/">
             <App />
           </BrowserRouter>
         </ThemeProvider>
