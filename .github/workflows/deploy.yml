@@ -34,7 +34,7 @@ jobs:
           # port: 21
           # dry-run: true
           local-dir: ./build/
-          server-dir: ./student-app.net.ua/petly-front/
+          server-dir: ./student-app.net.ua/
           exclude: |
             **/.git*
             **/.git*/**
