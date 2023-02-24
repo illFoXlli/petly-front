@@ -2,7 +2,6 @@
   "name": "petly-front",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://skazzp.github.io/petly-front/",
   "dependencies": {
     "@emotion/styled": "^11.10.5",
     "@mui/material": "^5.11.1",

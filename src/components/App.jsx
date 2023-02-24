@@ -10,6 +10,7 @@ import GoogleAuth from './GoogleAuth/GoogleAuth';
 import { PrivateRoute } from './PrivateRoute/PrivateRoute';
 import { PublicRoute } from './PublicRoute/PublicRoute';
 import { SharedLayout } from './SharedLayout';
+
 import { LoaderSpinner } from './LoaderSpinner/LoaderSpinner';
 import ShopPage from 'pages/ShopPage/ShopPage';
 
@@ -60,7 +61,7 @@ export const App = () => {
           <Route path="news" element={<NewsPage />}>
             <Route path="search" element={<></>} />
           </Route>
-          <Route path="shop" element={<ShopPage/>}></Route>
+          <Route path="shop" element={<ShopPage />}></Route>
           <Route path="notices" element={<NoticesPage />}>
             <Route path="lost-found" element={<></>} />
             <Route path="for-free" element={<></>} />
