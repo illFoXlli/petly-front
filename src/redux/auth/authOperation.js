@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
-axios.defaults.baseURL = 'https://n-code.com.ua/';
+axios.defaults.baseURL = 'http://n-code.com.ua/';
 // axios.defaults.baseURL = 'http://localhost:3030/';
 
 export const setAuthHeader = token => {
