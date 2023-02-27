@@ -25,18 +25,18 @@ jobs:
       #     branch: gh-pages
       #     folder: build
 
-      - name: 📂 Sync files
-        uses: SamKirkland/FTP-Deploy-Action@4.3.3
-        with:
-          server: vs1452.mirohost.net
-          username: ruden
-          password: R0h1MyklXQ9N
-          # port: 21
-          # dry-run: true
-          local-dir: ./build/
-          server-dir: ./student-app.net.ua/
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/node_modules/**
-            fileToExclude.txt
+      # - name: 📂 Sync files
+      #   uses: SamKirkland/FTP-Deploy-Action@4.3.3
+      #   with:
+      #     server: vs1452.mirohost.net
+      #     username: ruden
+      #     password: R0h1MyklXQ9N
+      #     # port: 21
+      #     # dry-run: true
+      #     local-dir: ./build/
+      #     server-dir: ./student-app.net.ua/
+      #     exclude: |
+      #       **/.git*
+      #       **/.git*/**
+      #       **/node_modules/**
+      #       fileToExclude.txt
